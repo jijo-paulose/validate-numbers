@@ -1,24 +1,23 @@
 
-> strings-escape
+> validate-numbers
 
 
 ## Install
 
 ```
-$ npm install --save strings-escape
+$ npm i --save validate-numbers
+
 ```
 
 
 ## Usage
 
 ```js
-const stringEscape = require('strings-escape');
+const {validateNumber} = require('validate-numbers');
 
-const convertedString = stringEscape('Remove special $ characters in RegExp');
+validateNumbers(5)    // true
+validateNumbers("6") // false 
 
-//=> 'Remove special \$ characters in RegExp'
-
-new RegExp(convertedString);
 
 ```
 
